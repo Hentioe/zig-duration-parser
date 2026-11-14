@@ -1,1 +1,4 @@
-//! By convention, root.zig is the root source file when making a package.
+pub const parser = @import("parser.zig");
+
+pub const parse = parser.parse;
+pub const ParseError = parser.ParseError;
